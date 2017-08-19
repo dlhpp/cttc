@@ -5,6 +5,16 @@
     margin-bottom: 0;
 }
 
-.coachrow, .meetingrow {
+.coachrow, .meetingrow, .photorow, .onlinerow {
     margin-bottom: 40px;
+}
+
+ol.breadcrumb {
+    /*background-color: transparent;*/
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #bbb;
+    content: ">\00a0";
 }
