@@ -63,4 +63,5 @@ table.sched th, table.sched td {
 
 .alertmsg {
     color: red;
+    font-weight: bold;
 }
