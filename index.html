@@ -16,7 +16,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+    <link href='fullcalendar/list/main.css' rel='stylesheet' />
+    
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/interaction/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src='fullcalendar/timegrid/main.js'></script>
+    <script src='fullcalendar/list/main.js'></script>
+    
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+            header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+            },
+            navLinks: true,                    
+            editable: false,
+            displayEventEnd: true,
+            eventSources: [
+              {
+                url: 'fullcalendar_ccc.json',
+                color: '#87cefa' /* '#155799' */,
+                textColor: 'black'
+              },
+              {
+                url: 'fullcalendar_trc.json',
+                color: 'Gold'  /* '#159957' */,
+                textColor: 'black'
+              }
+            ]
+          });
+      
+          calendar.render();
+        });
+      
+      </script>
+      
+    <title>CTTC</title>
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,6 +75,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        #calendar {
+            max-width: 1000px;
+            /* margin: 0 auto; */
+        }
+    </style>      
 </head>
 
 <body>
@@ -127,16 +179,18 @@
 
         <h2>Schedule</h2>
         <!-- <h3 class="alertmsg">Please note: no ping pong during weekdays (Mon - Fri) from Oct. 1 to Oct. 12.</h3> -->
-
-        <h3>
-            <a href="https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/tumbleweed-recreation-center/open-gym">
-                Click here for direct link to TRC schedule
-            </a>
-        </h3>
         
         <p>
-            <img src="schedule.PNG" />
+            <!-- <img src="schedule.PNG" /> -->
+            <br/>
+            <div id='calendar'></div>
         </p>
+
+        <h3>
+            <a target="_blank" href="https://www.chandleraz.gov/explore/chandler-recreation/centers-and-facilities/tumbleweed-recreation-center/open-gym">
+                See also:  Tumbleweed Recreation Center calendar
+            </a>
+        </h3>
     </div>
 </div>
 
