@@ -49,6 +49,20 @@
             editable: false,
             displayEventEnd: true,
             defaultView: window.mobilecheck() ? "timeGridWeek" : "dayGridMonth",
+            views: {
+                dayGridMonth: { 
+                    titleFormat: { year: 'numeric', month: 'short' }
+                    // other view-specific options here
+                },
+                timeGridWeek: { 
+                    titleFormat: { year: 'numeric', month: 'short' }
+                },
+                timeGridDay: { 
+                    // titleFormat: { year: 'numeric', month: '2-digit', day: '2-digit' }
+                    titleFormat: { month: 'short', day: '2-digit' }
+                }
+            },
+            // titleFormat: { year: 'numeric', month: 'short' },
             eventSources: [
               {
                 url: 'fullcalendar_ccc.json',
