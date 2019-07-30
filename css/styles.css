@@ -1,64 +1,9 @@
-.jumbotron {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.coachrow, .meetingrow, .photorow, .onlinerow {
-    margin-bottom: 40px;
-}
-
-.ladderchamp {
-    padding: 15px;
-    background-color: yellow;
-    border: 1px solid gray;
-    border-radius: 15px;
-}
-
-ol.breadcrumb {
-    /*background-color: transparent;*/
-}
-
-.breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #bbb;
-    content: ">\00a0";
-}
-
 .ccc {
     color:#155799;
 }
 
 .trc {
     color:#159957
-}
-
-table.sched {
-    border-collapse: collapse;
-}
-
-table.sched, table.sched th, table.sched td {
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 5px;
-}
-
-table.sched th, table.sched td {
-    width: 12%;
-}
-
-.sched_ccc {
-    background-color: rgb(240, 234, 250);
-    color:#155799;
-}
-
-.sched_trc {
-    background-color: rgb(172, 241, 209);
-    color:#159957
-}
-
-.sched_both {
-    background-color: rgb(235, 235, 152);
 }
 
 .alertmsg {
