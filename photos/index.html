@@ -12,102 +12,194 @@
     gtag('config', 'UA-118689863-1');
     </script>
     
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='css/cal.css' rel='stylesheet' />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>CTTC</title>
+
 </head>
 
 <body>
-    <div class="jumbotron" style="color: white; text-align: center; background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
-        <div class="container">
-            <h1>Chandler Table Tennis Club</h1>
-            <p>Promoting table tennis in Chandler and the East Valley</p>
-        </div>
-    </div>
 
-    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0;">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="/">CTTC</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li ><a href="/">Home</a></li>
-                    <li ><a href="/about/">About</a></li>
-                    <!-- <li ><a href="/contact/">Contact</a></li> -->
-                    <li ><a href="/coaches/">Coaches</a></li>
-                    <li ><a href="/online/">Links</a></li>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
+            <div class="container">
+                <a href="/" class="brand-logo">Chandler Table Tennis Club</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/coaches/">Coaches</a></li>
+                    <li><a href="/online/">Links</a></li>
                     <li class="active"><a href="/photos/">Photos</a></li>
-                    <!-- <li ><a href="/ladder/">Ladder Tournament</a></li> -->
                 </ul>
             </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/coaches/">Coaches</a></li>
+        <li><a href="/online/">Links</a></li>
+        <li class="active"><a href="/photos/">Photos</a></li>
+    </ul>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col s12">
+                <h4>Photos:</h4>
+                <h6>These pics are from our first ever tournament on July 4, 2017</h6>
+            </div>
         </div>
-    </nav>
+    </div>
 
     <div class="container">
 
-                <h2>Tournament Photos</h2>
+        <div class="row">
 
-        <div class="row photorow">
-            <div class="col-md-12">
-                <a href="tournament_2017.07.04">
-                    <h3>
-                        July 4, 2017: Inaugural Independence Day Tournament
-                    </h3>
-                </a>
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Group photo"
+                    src="tournament_2017.07.04/tournament_players_group_photo.jpg">
+                    Group photo
             </div>
-        </div>
 
-        <br>&nbsp;<br>
-
-        <h2>Sunday Pay-to-Play Photos</h2>
-
-        <div class="row photorow">
-            <div class="col-md-12">
-                <a href="pay_to_play_2017.07.30">
-                    <h3>
-                        July 30, 2017: First Sunday Pay-to-Play Event.
-                    </h3>
-                </a>
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Sruti Raman"
+                    src="tournament_2017.07.04/Sruti Raman_02.jpg">
+                    Sruti Raman
             </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Sruti Raman"
+                    src="tournament_2017.07.04/Sruti Raman_01.jpg">
+                    Sruti Raman
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Robby"
+                    src="tournament_2017.07.04/robby.jpg">
+                    Robby
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Ricky"
+                    src="tournament_2017.07.04/ricky.jpg">
+                    Ricky
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Sean Tseng"
+                    src="tournament_2017.07.04/Sean_Tseng.jpg">
+                    Sean Tseng
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Atul Raman"
+                    src="tournament_2017.07.04/Atul_Raman_02.jpg">
+                    Atul Raman
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Atul Raman, Mike Fuschino"
+                    src="tournament_2017.07.04/Atul Raman-Mike Fuschino.jpg">
+                    Atul Raman, Mike Fuschino
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Panno Dok, Sruti Raman"
+                    src="tournament_2017.07.04/Panno Dok-Sruti Raman.jpg">
+                    Panno Dok, Sruti Raman
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Mike Fuschino"
+                    src="tournament_2017.07.04/Mike Fuschino.jpg">
+                    Mike Fuschino
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Atul Raman"
+                    src="tournament_2017.07.04/Atul Raman.jpg">
+                    Atul Raman
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Alvato Roberts"
+                    src="tournament_2017.07.04/Alvato Roberts.jpg">
+                    Alvato Roberts
+            </div>
+
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Lynne Win, Atul Raman, Sam Huang, Panno Dok"
+                    src="tournament_2017.07.04/Lynne Win-Atul Raman-Sam Huang-Panno Dok.jpg">
+                    Lynne Win, Atul Raman, Sam Huang, Panno Dok
+            </div>
+    
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Atul Raman, Sam Huang, Panno Dok"
+                    src="tournament_2017.07.04/Atul Raman-Sam Huang-Panno Dok.jpg">
+                    Atul Raman, Sam Huang, Panno Dok
+            </div>
+    
+            <div class="col s12 m4">
+                <img 
+                    class="responsive-img materialboxed" 
+                    data-caption="Lynne Win, Atul Raman, Sam Huang, Panno Dok"
+                    src="tournament_2017.07.04/Lynne Win-Atul Raman-Sam Huang-Panno Dok 02.jpg">
+                    Lynne Win, Atul Raman, Sam Huang, Panno Dok
+            </div>
+
         </div>
-
-
-        <hr>
-
-        <footer>
-            <p> &nbsp; <!-- &copy; 2017 DLHPP --></p>
-        </footer>
 
     </div>
 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        const gallery = document.querySelectorAll(".materialboxed");
+        M.Materialbox.init(gallery, {});
+      });
+    </script>
 
-
-    <!-- =============================================================================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

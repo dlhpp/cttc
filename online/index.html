@@ -19,21 +19,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    <link href='fullcalendar/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-    <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
-    <link href='fullcalendar/list/main.css' rel='stylesheet' />
-
     <link href="css/styles.css" rel="stylesheet">
     <link href='css/cal.css' rel='stylesheet' />
-
-    <script src='fullcalendar/core/main.js'></script>
-    <script src='fullcalendar/interaction/main.js'></script>
-    <script src='fullcalendar/daygrid/main.js'></script>
-    <script src='fullcalendar/timegrid/main.js'></script>
-    <script src='fullcalendar/list/main.js'></script>
-
-    <script src='js/cal.js'></script>
 
     <title>CTTC</title>
 
@@ -52,7 +39,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/coaches/">Coaches</a></li>
                     <li class="active"><a href="/online/">Links</a></li>
-                    <li><a href="/photos/">Tournaments</a></li>
+                    <li><a href="/photos/">Photos</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,7 +49,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/coaches/">Coaches</a></li>
         <li class="active"><a href="/online/">Links</a></li>
-        <li><a href="/photos/">Tournaments</a></li>
+        <li><a href="/photos/">Photos</a></li>
     </ul>
 
     <div class="container ">
@@ -75,9 +62,9 @@
 
     <div class="container ">
         <div class="row">
-            <div class="col s12">
+            <div class="col s8 offset-s2">
                 <div class="card hoverable horizontal">
-                    <div class="card-image">
+                    <div class="card-image hide-on-med-and-down">
                         <a target="_blank" href="https://www.youtube.com/watch?v=YQ8jiI0mVOM&list=PLbi5LUlkUf6VOJIgqnZbDJjF549L4tokC"><img src="yangyang2.png"/></a>
                     </div>
                     <div class="card-stacked">
@@ -108,9 +95,9 @@
 
 
         <div class="row">
-            <div class="col s6 offset-s3">
+            <div class="col s8 offset-s2">
                 <div class="card hoverable ">
-                    <div class="card-image">
+                    <div class="card-image hide-on-med-and-down">
                         <a target="_blank" href="https://www.youtube.com/user/EmRatThichVo"><img src="emratthic_in_spin_we_trust.png"/></a>
                     </div>
                     <div class="card-stacked">
@@ -138,9 +125,9 @@
 
 
         <div class="row">
-            <div class="col s12">
+            <div class="col s8 offset-s2">
                 <div class="card hoverable horizontal">
-                    <div class="card-image">
+                    <div class="card-image hide-on-med-and-down">
                         <a target="_blank" href="http://pongmobile.com/"><img src="pongmobile.png"/></a>
                     </div>
                     <div class="card-stacked">
@@ -162,12 +149,15 @@
 
     </div>
 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
 
-
-    <!-- =============================================================================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
